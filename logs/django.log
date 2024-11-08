@@ -1,0 +1,448 @@
+INFO 2024-11-08 10:18:52,763 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:18:55,201 log Not Found: /
+INFO 2024-11-08 10:22:02,609 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:22:05,478 log Not Found: /
+INFO 2024-11-08 10:22:19,154 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/develop.py changed, reloading.
+INFO 2024-11-08 10:22:19,630 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:22:22,725 log Not Found: /
+WARNING 2024-11-08 10:22:23,024 log Not Found: /
+WARNING 2024-11-08 10:22:23,359 log Not Found: /
+INFO 2024-11-08 10:22:55,598 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:22:56,136 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:23:21,935 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:23:22,423 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:24:39,410 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/develop.py changed, reloading.
+INFO 2024-11-08 10:24:39,912 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:24:46,531 log Not Found: /accounts/login/
+INFO 2024-11-08 10:25:04,725 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/develop.py changed, reloading.
+INFO 2024-11-08 10:25:05,219 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:29:04,500 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:29:05,069 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:29:14,519 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:29:15,061 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-08 10:29:17,491 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'rest_framework'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 78, in render
+    self.set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 127, in set_context
+    super(SwaggerUIRenderer, self).set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 86, in set_context
+    renderer_context.update(self.get_auth_urls())
+                            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 110, in get_auth_urls
+    'LOGOUT_URL': self.resolve_url(swagger_settings.LOGOUT_URL),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 105, in resolve_url
+    return resolve_url(to, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered namespace
+ERROR 2024-11-08 10:29:18,244 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'rest_framework'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 78, in render
+    self.set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 127, in set_context
+    super(SwaggerUIRenderer, self).set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 86, in set_context
+    renderer_context.update(self.get_auth_urls())
+                            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 110, in get_auth_urls
+    'LOGOUT_URL': self.resolve_url(swagger_settings.LOGOUT_URL),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 105, in resolve_url
+    return resolve_url(to, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered namespace
+ERROR 2024-11-08 10:29:18,430 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'rest_framework'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 78, in render
+    self.set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 127, in set_context
+    super(SwaggerUIRenderer, self).set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 86, in set_context
+    renderer_context.update(self.get_auth_urls())
+                            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 110, in get_auth_urls
+    'LOGOUT_URL': self.resolve_url(swagger_settings.LOGOUT_URL),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 105, in resolve_url
+    return resolve_url(to, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered namespace
+ERROR 2024-11-08 10:29:18,611 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'rest_framework'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 78, in render
+    self.set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 127, in set_context
+    super(SwaggerUIRenderer, self).set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 86, in set_context
+    renderer_context.update(self.get_auth_urls())
+                            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 110, in get_auth_urls
+    'LOGOUT_URL': self.resolve_url(swagger_settings.LOGOUT_URL),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 105, in resolve_url
+    return resolve_url(to, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered namespace
+ERROR 2024-11-08 10:29:18,812 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'rest_framework'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 78, in render
+    self.set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 127, in set_context
+    super(SwaggerUIRenderer, self).set_context(renderer_context, swagger)
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 86, in set_context
+    renderer_context.update(self.get_auth_urls())
+                            ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 110, in get_auth_urls
+    'LOGOUT_URL': self.resolve_url(swagger_settings.LOGOUT_URL),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/drf_yasg/renderers.py", line 105, in resolve_url
+    return resolve_url(to, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'rest_framework' is not a registered namespace
+INFO 2024-11-08 10:30:08,539 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/urls.py changed, reloading.
+INFO 2024-11-08 10:30:09,050 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:30:25,683 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:30:26,243 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:31:03,258 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:31:03,743 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:31:29,625 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:31:30,106 autoreload Watching for file changes with StatReloader
+ERROR 2024-11-08 10:31:32,418 log Internal Server Error: /swagger/
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/debug_toolbar/middleware.py", line 97, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/debug_toolbar/toolbar.py", line 84, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+INFO 2024-11-08 10:32:29,811 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/urls.py changed, reloading.
+INFO 2024-11-08 10:32:30,298 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:32:37,503 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/urls.py changed, reloading.
+INFO 2024-11-08 10:32:38,020 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:32:54,403 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/urls.py changed, reloading.
+INFO 2024-11-08 10:32:54,891 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:32:57,149 log Not Found: /swagger/
+INFO 2024-11-08 10:33:19,692 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/urls.py changed, reloading.
+INFO 2024-11-08 10:33:20,220 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:36:02,862 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:37:18,823 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:37:19,364 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:43:30,706 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:43:33,553 log Not Found: /
+WARNING 2024-11-08 10:43:34,770 log Not Found: /favicon.ico
+INFO 2024-11-08 10:48:22,165 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:48:22,680 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:51:07,439 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:51:12,566 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:51:16,507 log Not Found: /
+INFO 2024-11-08 10:52:29,105 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:52:29,749 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:52:36,132 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:52:36,672 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:52:52,255 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/base.py changed, reloading.
+INFO 2024-11-08 10:52:52,775 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:52:57,979 utils books not found when generating links
+ERROR 2024-11-08 10:52:58,090 log Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/test/utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/template/defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/abduvali/PycharmProjects/boilerplate_drf/venv/lib/python3.12/site-packages/django/urls/resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'set_language' not found. 'set_language' is not a valid view function or pattern name.
+INFO 2024-11-08 10:54:01,925 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/urls.py changed, reloading.
+INFO 2024-11-08 10:54:02,446 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:54:06,187 utils books not found when generating links
+WARNING 2024-11-08 10:54:06,191 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:54:06,192 utils Couldnt reverse make_messages
+INFO 2024-11-08 10:54:32,523 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/jazzmin.py changed, reloading.
+INFO 2024-11-08 10:54:33,038 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:54:34,343 utils books not found when generating links
+WARNING 2024-11-08 10:54:34,348 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:54:34,350 utils Couldnt reverse make_messages
+INFO 2024-11-08 10:54:46,820 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/jazzmin.py changed, reloading.
+INFO 2024-11-08 10:54:47,351 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:54:48,385 utils books not found when generating links
+WARNING 2024-11-08 10:54:48,390 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:54:48,391 utils Couldnt reverse make_messages
+INFO 2024-11-08 10:55:02,972 autoreload /home/abduvali/PycharmProjects/boilerplate_drf/core/settings/jazzmin.py changed, reloading.
+INFO 2024-11-08 10:55:03,534 autoreload Watching for file changes with StatReloader
+INFO 2024-11-08 10:55:21,541 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-08 10:55:25,166 utils books not found when generating links
+WARNING 2024-11-08 10:55:25,171 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:25,172 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:25,948 utils books not found when generating links
+WARNING 2024-11-08 10:55:25,958 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:25,961 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:26,173 utils books not found when generating links
+WARNING 2024-11-08 10:55:26,180 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:26,182 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:26,366 utils books not found when generating links
+WARNING 2024-11-08 10:55:26,374 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:26,377 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:26,542 utils books not found when generating links
+WARNING 2024-11-08 10:55:26,551 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:26,553 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:26,709 utils books not found when generating links
+WARNING 2024-11-08 10:55:26,717 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:55:26,720 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:18,796 utils books not found when generating links
+WARNING 2024-11-08 10:58:18,805 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:18,808 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:19,138 utils books not found when generating links
+WARNING 2024-11-08 10:58:19,147 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:19,149 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:19,379 utils books not found when generating links
+WARNING 2024-11-08 10:58:19,385 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:19,386 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:19,505 utils books not found when generating links
+WARNING 2024-11-08 10:58:19,512 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:19,514 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:28,875 utils books not found when generating links
+WARNING 2024-11-08 10:58:28,881 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:28,882 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:34,476 utils books not found when generating links
+WARNING 2024-11-08 10:58:34,485 utils Couldnt reverse make_messages
+WARNING 2024-11-08 10:58:34,487 utils Couldnt reverse make_messages
