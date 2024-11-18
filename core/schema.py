@@ -7,9 +7,9 @@ from .generator import BothHttpAndHttpsSchemaGenerator
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="UIC API",
+        title="BoilerPlate API",
         default_version="v1",
-        description="UIC Group",
+        description="This is the django boilerplate",
         terms_of_service="https://www.google.com/policies/terms/",
         contact=openapi.Contact(email="info@uic.group"),
         license=openapi.License(name="BSD License"),
