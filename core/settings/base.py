@@ -93,6 +93,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "core.wsgi.application"
+BASE_URL = os.getenv('BASE_URL', 'http://localhost:8000')
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
