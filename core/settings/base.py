@@ -3,7 +3,7 @@ from pathlib import Path
 
 import environ
 
-# Build paths inside the project like this: 
+# Build paths inside the project like
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # READING ENV
