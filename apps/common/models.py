@@ -10,5 +10,3 @@ class BaseModel(models.Model):
         abstract = True
 
 
-
-
