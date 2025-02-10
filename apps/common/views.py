@@ -5,7 +5,6 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-# Configure Redis connection
 redis_client = redis.StrictRedis(
     host=settings.REDIS_HOST,
     port=settings.REDIS_PORT,
