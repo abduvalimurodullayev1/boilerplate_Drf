@@ -21,4 +21,4 @@ def health_check_redis(request):
         return Response(
             {"status": "error", "message": "Redis server is not working."},
             status=status.HTTP_400_BAD_REQUEST,
-        )
+        )                    
