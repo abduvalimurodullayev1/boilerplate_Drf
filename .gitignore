@@ -1,3 +1,43 @@
-.env
-.idea
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
 .venv/
+venv/
+env/
+
+# Django Static / Media
+staticfiles/
+media/
+
+# IDE/Editor
+.idea/
+.vscode/
+*.swp
+
+# OS system files
+.DS_Store
+Thumbs.db
+
+# Env files and secrets
+.env
+.env.*
+*.secret
+
+# Migrations (Optional: faqat boilerplate uchun)
+# uncomment if you want to ignore generated migrations initially
+# */migrations/*.py
+# !*/migrations/__init__.py
+
+# Logs
+*.log
+
+# Docker
+docker-compose.override.yml
