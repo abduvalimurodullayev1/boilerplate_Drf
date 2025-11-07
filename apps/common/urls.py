@@ -1,10 +1,10 @@
 from django.urls import path
 
-from apps.common.views import health_check_redis
+from apps.common.views import health_check
 
 app_name = "common"
 
 urlpatterns = [
 
-    path("health-check/redis/", health_check_redis, name="health-check-redis"),
+    path("health-check/redis/", health_check, name="health-check-redis"),
 ]
