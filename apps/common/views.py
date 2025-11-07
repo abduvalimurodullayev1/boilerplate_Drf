@@ -1,25 +1,27 @@
-import redis
 
-from django.conf import settings
-from rest_framework import status
+
+from django.db import connection
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-
-redis_client = redis.StrictRedis(
-    host=settings.REDIS_HOST,
-    port=settings.REDIS_PORT,
-    db=settings.REDIS_DB,
-)
-
+from django.conf import settings
+import redis
 
 @api_view(["GET"])
-def health_check_redis(request):
+def health_check(request):
+    # Check DB
     try:
-        redis_client.ping()
-        return Response({"status": "success"}, status=status.HTTP_200_OK)
-    except redis.ConnectionError:
-        return Response(
-            {"status": "error", "message": "Redis server is not working."},
-            status=status.HTTP_400_BAD_REQUEST,
-        )                    
+        connection.cursor()
+    except Exception:
+        return Response({"status": "error", "service": "db"}, status=500)
 
+    # Check Redis
+    try:
+        redis.StrictRedis(
+            host=settings.REDIS_HOST,
+            port=settings.REDIS_PORT,
+            db=settings.REDIS_DB,
+        ).ping()
+    except Exception:
+        return Response({"status": "error", "service": "redis"}, status=500)
+
+    return Response({"status": "ok"}, status=200)
