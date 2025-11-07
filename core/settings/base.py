@@ -137,36 +137,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '{levelname} {asctime} {module} {message}',
-            'style': '{',
-        },
-        'simple': {
-            'format': '{levelname} {message}',
-            'style': '{',
-        },
-    },
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-            'formatter': 'simple',
-        },
-        'file': {
-            'level': 'DEBUG',
-            'class': 'logging.FileHandler',
-            'filename': BASE_DIR / 'logs/django.log',
-            'formatter': 'verbose',
-        },
-    },
-    'root': {
-        'handlers': ['console', 'file'],
-        'level': 'INFO',
-    },
-}
 
 from datetime import timedelta
 
@@ -243,13 +213,7 @@ CACHES = {
         "KEY_PREFIX": "boilerplate",  # todo: you must change this with your project name or something else
     }
 }
-# email configurations
-EMAIL_HOST = env.str("EMAIL_HOST", "localhost")
-EMAIL_PORT = env.int("EMAIL_PORT", 25)
-EMAIL_HOST_USER = env.str("EMAIL_HOST_USER", "")
-EMAIL_HOST_PASSWORD = env.str("EMAIL_HOST_PASSWORD", "")
-EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS", False)
-EMAIL_USE_SSL = env.bool("EMAIL_USE_SSL", False)
+
 
 # redis
 REDIS_HOST = env.str("REDIS_HOST", "localhost")
@@ -266,7 +230,3 @@ CELERY_TASK_TRACK_STARTED = True
 CELERY_TASK_TIME_LIMIT = 30 * 60
 
 AES_KEY = env.str("AES_KEY", "")
-
-# core/constants.py
-CACHE_TIMEOUT = 60 * 15  # 15 minutes
-AES_BLOCK_SIZE = 16
