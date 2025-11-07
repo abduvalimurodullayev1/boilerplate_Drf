@@ -31,12 +31,7 @@ Thumbs.db
 .env.*
 *.secret
 
-# Migrations (Optional: faqat boilerplate uchun)
-# uncomment if you want to ignore generated migrations initially
-# */migrations/*.py
-# !*/migrations/__init__.py
 
-# Logs
 *.log
 
 # Docker
